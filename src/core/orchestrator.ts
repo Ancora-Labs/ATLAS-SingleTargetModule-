@@ -116,6 +116,7 @@ import { loadPlatformModeState, PLATFORM_MODE, summarizePlatformModeState } from
 import {
   archiveTargetSession,
   loadActiveTargetSession,
+  loadLastArchivedTargetSession,
   saveActiveTargetSession,
   summarizeActiveTargetSession,
   transitionActiveTargetSession,
@@ -446,7 +447,9 @@ async function prepareTargetSessionForCycle(config: any): Promise<{ action: "con
           nextAction: "await_next_target",
           handoff: {
             carriedContextSummary: handoff?.summary || targetSuccessReport?.summary || activeTargetSession.objective?.summary || null,
-            requiredHumanInputs: Array.isArray(handoff?.requiredHumanInputs) ? handoff.requiredHumanInputs : [],
+            requiredHumanInputs: Array.isArray(targetSuccessReport?.pendingHumanInputs)
+              ? targetSuccessReport.pendingHumanInputs
+              : [],
           },
         });
         bindRuntimeTargetContext(config, platformModeState, activeTargetSession);

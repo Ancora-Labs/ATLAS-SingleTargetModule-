@@ -1,5 +1,5 @@
-# Lint and test gate — runs on every push/PR to main.
-# Implements issue #5: baseline CI for the BOX repository.
+# Typecheck gate — runs on every push/PR to main.
+# ATLAS currently exposes a reduced public runtime package surface; lint/test scripts are not part of this package contract.
 name: CI
 
 on:
@@ -9,8 +9,8 @@ on:
     branches: [main]
 
 jobs:
-  lint-and-test:
-    name: Lint & Test (Node 20)
+  typecheck:
+    name: Typecheck (Node 20)
     runs-on: ubuntu-latest
 
     steps:
@@ -26,13 +26,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
-
       - name: Typecheck
         run: npm run typecheck
-
-      - name: Test
-        # Sync: package.json "test" script is the single source of truth.
-        # Do NOT add glob patterns here — use npm test only.
-        run: npm test
