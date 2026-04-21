@@ -1,0 +1,32 @@
+[
+  {
+    "workerName": "evolution-worker",
+    "taskCompleted": true,
+    "expectedOutcome": "Legacy postmortem without decisionQualityLabel field",
+    "actualOutcome": "Task done",
+    "deviation": "none",
+    "successCriteriaMet": true,
+    "lessonLearned": "Keep schemas versioned",
+    "qualityScore": 7,
+    "followUpNeeded": false,
+    "followUpTask": "",
+    "recommendation": "proceed",
+    "reviewedAt": "2025-06-01T10:00:00.000Z",
+    "model": "Claude Sonnet 4.6"
+  },
+  {
+    "workerName": "evolution-worker",
+    "taskCompleted": false,
+    "expectedOutcome": "Legacy postmortem without decisionQualityLabel field",
+    "actualOutcome": "Task timed out",
+    "deviation": "major",
+    "successCriteriaMet": false,
+    "lessonLearned": "Increase timeout for long-running tasks",
+    "qualityScore": 3,
+    "followUpNeeded": true,
+    "followUpTask": "Retry with extended timeout",
+    "recommendation": "rework",
+    "reviewedAt": "2025-06-02T14:30:00.000Z",
+    "model": "Claude Sonnet 4.6"
+  }
+]

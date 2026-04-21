@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/calibration_fixture.schema.json",
+  "schemaVersion": 1,
+  "fixtureId": "bad-plan-001",
+  "category": "bad",
+  "expectedVerdict": "rejected",
+  "expectedRationaleClasses": [
+    "VAGUE_GOAL",
+    "NO_VERIFICATION",
+    "MISSING_SCOPE",
+    "SPEC_INCOMPLETE"
+  ],
+  "description": "A plan with no verification command, no scope, vague goal, and no success criterion.",
+  "plan": {
+    "role": "Esther",
+    "task": "Refactor the codebase",
+    "priority": 3,
+    "wave": 1,
+    "verification": "",
+    "files": [],
+    "context": ""
+  }
+}

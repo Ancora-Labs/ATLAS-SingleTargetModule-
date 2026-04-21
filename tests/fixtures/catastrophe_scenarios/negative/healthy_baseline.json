@@ -1,0 +1,14 @@
+{
+  "_label": "negative",
+  "_scenario": "HEALTHY_BASELINE",
+  "_description": "All values well below thresholds — must detect NOTHING",
+  "retryCount": 0,
+  "totalTasks": 5,
+  "blockedTasks": 1,
+  "janusDirectiveAgeMs": 300000,
+  "prometheusAnalysisAgeMs": 300000,
+  "parseFailureCount": 0,
+  "consecutiveBudgetBreaches": 0,
+  "consecutiveSloBreaches": 0
+}
+

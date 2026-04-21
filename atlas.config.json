@@ -1,0 +1,99 @@
+{
+  "loopIntervalMs": 20000,
+  "maxParallelWorkers": 6,
+  "defaultBranchPrefix": "atlas/task-",
+  "workspaceDir": ".atlas-work",
+  "progressFile": "state/progress.txt",
+  "policyFile": "policy.json",
+  "git": {
+    "autoCreatePr": false,
+    "autoMergeOnGreen": false,
+    "autoMergeWaitSeconds": 300,
+    "autoMergePollSeconds": 15,
+    "autoMergeMethod": "squash",
+    "requiredCheckRuns": [],
+    "requiredStatusContexts": []
+  },
+  "runtime": {
+    "reviewerProvider": "copilot",
+    "stopOnError": true,
+    "autonomousMaxAttemptsPerTask": 3,
+    "autonomousTaskSplitOnFailure": true,
+    "maxQueuedTasks": 30,
+    "janusTimeoutMs": 1800000,
+    "janusDisableTier1": true,
+    "janusDecisionLatencyWarningMs": 900000,
+    "workerTimeoutMinutes": 90,
+    "verificationCommandTimeoutMs": 3600000,
+    "dashboardEnabled": false
+  },
+  "roleRegistry": {
+    "ceoSupervisor": {
+      "id": "ceo-supervisor",
+      "name": "Janus",
+      "model": "gpt-5.4",
+      "provider": "copilot"
+    },
+    "deepPlanner": {
+      "id": "deep-planner",
+      "name": "Prometheus",
+      "model": "gpt-5.4",
+      "provider": "copilot"
+    },
+    "qualityReviewer": {
+      "id": "quality-reviewer",
+      "name": "Athena",
+      "model": "gpt-5.4",
+      "provider": "copilot"
+    },
+    "workers": {
+      "quality": {
+        "id": "worker-quality",
+        "name": "quality-worker",
+        "model": "gpt-5.4",
+        "lane": "quality"
+      },
+      "governance": {
+        "id": "worker-governance",
+        "name": "governance-worker",
+        "model": "gpt-5.4",
+        "lane": "governance"
+      },
+      "infrastructure": {
+        "id": "worker-infrastructure",
+        "name": "infrastructure-worker",
+        "model": "gpt-5.4",
+        "lane": "infrastructure"
+      },
+      "integration": {
+        "id": "worker-integration",
+        "name": "integration-worker",
+        "model": "gpt-5.4",
+        "lane": "integration"
+      },
+      "observation": {
+        "id": "worker-observation",
+        "name": "observation-worker",
+        "model": "gpt-5.4",
+        "lane": "observation"
+      }
+    }
+  },
+  "planner": {
+    "useReviewerForPlanning": true,
+    "maxTasks": 6,
+    "defaultMaxWorkersPerWave": 6,
+    "preferFewestWorkers": true,
+    "allowSameCycleFollowUps": false,
+    "requireDependencyAwareWaves": false,
+    "splitConflictingPlansAcrossBatches": false
+  },
+  "selfDev": {
+    "futureModeFlags": {
+      "singleTargetDelivery": true,
+      "targetSessionState": true,
+      "targetPromptOverlay": true,
+      "targetWorkspaceLifecycle": true
+    }
+  }
+}

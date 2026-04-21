@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/calibration_fixture.schema.json",
+  "schemaVersion": 1,
+  "fixtureId": "good-plan-001",
+  "category": "good",
+  "expectedVerdict": "approved",
+  "expectedRationaleClasses": [
+    "MEASURABLE_GOAL",
+    "CLEAR_SUCCESS_CRITERION",
+    "CONCRETE_VERIFICATION",
+    "SCOPE_DEFINED"
+  ],
+  "description": "A well-specified plan with measurable goal, concrete verification command, and explicit file scope.",
+  "plan": {
+    "role": "King David",
+    "task": "Add retry logic to src/core/worker_runner.js: retry up to 3 times on transient spawn errors, with 500ms backoff, and expose retryCount in the worker result object.",
+    "priority": 1,
+    "wave": 1,
+    "verification": "npm test -- --grep 'worker_runner retry'",
+    "files": ["src/core/worker_runner.js", "tests/core/worker_runner.test.ts"],
+    "context": "Worker spawns sometimes fail transiently in CI due to process limits. Retries with backoff reduce false-negatives. Success criterion: worker_runner.test.ts retry cases pass and retryCount field is present in result."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "protectedPaths": [],
+  "requireReviewerApprovalForProtectedPaths": false,
+  "blockedCommands": [
+    "rm -rf /",
+    "git push --force",
+    "git reset --hard"
+  ],
+  "governanceContract": {
+    "version": "1.0.0",
+    "highRiskScoreThreshold": 0.7,
+    "criticalRiskScoreThreshold": 0.9,
+    "highRiskChangeTypes": ["core_module", "policy", "security", "schema"],
+    "approvedApproverRoles": ["athena", "janus", "human", "operator"],
+    "rollbackSlaMinutes": 30,
+    "approvalEvidencePath": "state/approval_evidence.jsonl"
+  }
+}
+

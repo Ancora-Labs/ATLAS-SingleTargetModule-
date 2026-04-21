@@ -1,0 +1,14 @@
+{
+  "_label": "positive",
+  "_scenario": "RUNAWAY_RETRIES",
+  "_description": "retryCount (10) >= threshold (5) → must detect RUNAWAY_RETRIES",
+  "retryCount": 10,
+  "totalTasks": 3,
+  "blockedTasks": 0,
+  "janusDirectiveAgeMs": 60000,
+  "prometheusAnalysisAgeMs": 60000,
+  "parseFailureCount": 0,
+  "consecutiveBudgetBreaches": 0,
+  "consecutiveSloBreaches": 0
+}
+

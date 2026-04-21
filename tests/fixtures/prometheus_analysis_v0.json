@@ -1,0 +1,30 @@
+{
+  "plans": [
+    {
+      "role": "King David",
+      "kind": "implementation",
+      "priority": 1,
+      "wave": "wave-1",
+      "task": "Legacy task from v0 analysis",
+      "context": "src/core/orchestrator.js L1-50: legacy context",
+      "verification": "npm test",
+      "dependencies": [],
+      "downstream": ""
+    }
+  ],
+  "projectHealth": "needs-work",
+  "analysis": "Legacy analysis without schemaVersion",
+  "keyFindings": "Some findings",
+  "strategicNarrative": "Legacy planning narrative retained for parser-contract compatibility.",
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "analyzedAt": "2026-01-01T00:00:00.000Z",
+  "model": "Claude Sonnet 4.6",
+  "repo": "CanerDoqdu/Box",
+  "requestedBy": "Janus",
+  "requestBudget": {
+    "estimatedPremiumRequestsTotal": 1,
+    "hardCapTotal": 2,
+    "confidence": "medium"
+  }
+}
+

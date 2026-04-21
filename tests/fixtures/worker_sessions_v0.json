@@ -1,0 +1,14 @@
+{
+  "King David": {
+    "status": "idle",
+    "startedAt": null,
+    "activityLog": []
+  },
+  "Esther": {
+    "status": "working",
+    "startedAt": "2026-01-01T00:00:00.000Z",
+    "activityLog": [
+      { "status": "working", "from": "Esther", "task": "legacy task" }
+    ]
+  }
+}

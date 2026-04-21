@@ -1,0 +1,14 @@
+{
+  "_label": "positive",
+  "_scenario": "REPEATED_AI_PARSE_FAILURES",
+  "_description": "parseFailureCount (5) >= threshold (3) → must detect REPEATED_AI_PARSE_FAILURES",
+  "retryCount": 0,
+  "totalTasks": 3,
+  "blockedTasks": 0,
+  "janusDirectiveAgeMs": 60000,
+  "prometheusAnalysisAgeMs": 60000,
+  "parseFailureCount": 5,
+  "consecutiveBudgetBreaches": 0,
+  "consecutiveSloBreaches": 0
+}
+

@@ -1,0 +1,14 @@
+{
+  "_label": "positive",
+  "_scenario": "MASS_BLOCKED_TASKS",
+  "_description": "blockedTasks/totalTasks = 4/5 = 0.8 > threshold (0.5) → must detect MASS_BLOCKED_TASKS",
+  "retryCount": 0,
+  "totalTasks": 5,
+  "blockedTasks": 4,
+  "janusDirectiveAgeMs": 60000,
+  "prometheusAnalysisAgeMs": 60000,
+  "parseFailureCount": 0,
+  "consecutiveBudgetBreaches": 0,
+  "consecutiveSloBreaches": 0
+}
+

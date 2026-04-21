@@ -1,0 +1,15 @@
+services:
+  box:
+    build:
+      context: .
+      dockerfile: docker/orchestrator/Dockerfile
+    working_dir: /workspace
+    env_file:
+      - .env
+    volumes:
+      - ./:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+    # tsx is a production dependency (all entrypoints use node --import tsx);
+    # --omit=dev skips type-checking and linting tools not needed at runtime.
+    command: ["sh", "-c", "npm ci --omit=dev && npm run box:start"]
+    restart: unless-stopped

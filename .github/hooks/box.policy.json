@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "preToolUse hook governance — runtime contract for BOX worker decision-telemetry",
+  "preToolUse": {
+    "required": true,
+    "mandatoryFields": ["scope", "intent", "impact", "clearance"],
+    "validImpactValues": ["low", "medium", "high", "critical"],
+    "validClearanceValues": ["read", "write", "admin"],
+    "impactMinClearance": {
+      "low": "read",
+      "medium": "write",
+      "high": "admin",
+      "critical": "admin"
+    }
+  },
+  "hookDecision": {
+    "required": true,
+    "validDecisions": ["allow", "deny"],
+    "mandatoryFields": [
+      "tool",
+      "decision",
+      "reason_code",
+      "rule_id",
+      "envelope_scope",
+      "envelope_intent",
+      "envelope_impact",
+      "envelope_clearance"
+    ]
+  },
+  "enforcement": {
+    "requirePairedEnvelopeDecision": true,
+    "denyOnMissingEnvelope": true,
+    "denyOnMalformedEnvelope": true,
+    "denyOnDeniedDecision": true,
+    "requireEnvelopeBeforeDecision": true
+  }
+}

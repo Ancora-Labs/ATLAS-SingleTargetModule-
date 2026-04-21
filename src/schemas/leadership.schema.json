@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$comment": "Leadership contract schemas for BOX provider outputs. Used by src/core/trust_boundary.js. Bump schemaVersion on any breaking field change.",
+  "schemaVersion": 1,
+  "contracts": {
+    "planner": {
+      "$comment": "Prometheus planner output contract. Required fields that MUST be present and valid before downstream execution.",
+      "requiredFields": ["plans", "analysis", "projectHealth", "executionStrategy", "requestBudget"],
+      "fields": {
+        "plans": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Array of worker plan objects; each must have role, task, priority, wave, verification"
+        },
+        "analysis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Comprehensive analysis narrative"
+        },
+        "projectHealth": {
+          "type": "string",
+          "enum": ["good", "needs-work", "critical"],
+          "description": "Project health classification"
+        },
+        "executionStrategy": {
+          "type": "object",
+          "description": "Wave-based execution strategy object"
+        },
+        "requestBudget": {
+          "type": "object",
+          "description": "Request budget object with estimatedPremiumRequestsTotal"
+        }
+      },
+      "planItemRequiredFields": ["role", "task", "priority", "wave", "verification"],
+      "planItemFields": {
+        "role":         { "type": "string",  "minLength": 1 },
+        "task":         { "type": "string",  "minLength": 1 },
+        "priority":     { "type": "number"                  },
+        "wave":         { "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "integer", "minimum": 1 }] },
+        "verification": { "type": "string",  "minLength": 1 }
+      }
+    },
+    "reviewer": {
+      "$comment": "Athena plan-review output contract.",
+      "requiredFields": ["approved", "corrections", "planReviews"],
+      "fields": {
+        "approved": {
+          "type": "boolean",
+          "description": "Whether the plan is approved for execution"
+        },
+        "corrections": {
+          "type": "array",
+          "description": "List of mandatory corrections before execution"
+        },
+        "planReviews": {
+          "type": "array",
+          "description": "Per-plan review results"
+        }
+      }
+    },
+    "supervisor": {
+      "$comment": "Janus supervisor directive output contract.",
+      "requiredFields": ["decision", "wakeAthena", "callPrometheus", "briefForPrometheus", "systemHealth"],
+      "fields": {
+        "decision": {
+          "type": "string",
+          "enum": ["wait", "strategic", "tactical", "emergency"],
+          "description": "Strategic decision for the current cycle"
+        },
+        "wakeAthena": {
+          "type": "boolean",
+          "description": "Whether Athena should be activated this cycle"
+        },
+        "callPrometheus": {
+          "type": "boolean",
+          "description": "Whether Prometheus deep analysis should be triggered"
+        },
+        "briefForPrometheus": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Instructions for Prometheus on what to analyze and plan"
+        },
+        "systemHealth": {
+          "type": "string",
+          "description": "System health assessment string"
+        },
+        "expectedOutcome": {
+          "type": "object",
+          "description": "Expected-vs-realized calibration forecast. Attached by janus_supervisor after AI decision. Used to measure strategic decision quality across cycles.",
+          "properties": {
+            "expectedSystemHealthAfter": { "type": "string", "description": "Predicted system health state after executing this directive" },
+            "expectedNextDecision": { "type": "string", "description": "Predicted decision type Janus will make in the following cycle" },
+            "expectedAthenaActivated": { "type": "boolean", "description": "Whether Athena is expected to execute work this cycle" },
+            "expectedPrometheusRan": { "type": "boolean", "description": "Whether Prometheus is expected to produce a fresh analysis this cycle" },
+            "expectedWorkItemCount": { "type": "integer", "description": "Number of work items commanded in this directive" },
+            "forecastConfidence": { "type": "string", "enum": ["high", "medium", "low"], "description": "Janus confidence in this forecast" }
+          }
+        }
+      }
+    }
+  }
+}
+

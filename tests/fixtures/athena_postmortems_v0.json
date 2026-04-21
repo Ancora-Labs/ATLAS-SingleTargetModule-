@@ -1,0 +1,17 @@
+[
+  {
+    "workerName": "evolution-worker",
+    "taskCompleted": true,
+    "expectedOutcome": "Legacy postmortem without schemaVersion wrapper",
+    "actualOutcome": "Task done",
+    "deviation": "none",
+    "successCriteriaMet": true,
+    "lessonLearned": "Keep schemas versioned",
+    "qualityScore": 7,
+    "followUpNeeded": false,
+    "followUpTask": "",
+    "recommendation": "proceed",
+    "reviewedAt": "2026-01-01T00:00:00.000Z",
+    "model": "Claude Sonnet 4.6"
+  }
+]

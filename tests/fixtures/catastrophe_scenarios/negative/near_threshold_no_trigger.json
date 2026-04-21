@@ -1,0 +1,14 @@
+{
+  "_label": "negative",
+  "_scenario": "NEAR_THRESHOLD_NO_TRIGGER",
+  "_description": "All values just below every threshold — must detect NOTHING",
+  "retryCount": 4,
+  "totalTasks": 4,
+  "blockedTasks": 2,
+  "janusDirectiveAgeMs": 7199000,
+  "prometheusAnalysisAgeMs": 7199000,
+  "parseFailureCount": 2,
+  "consecutiveBudgetBreaches": 1,
+  "consecutiveSloBreaches": 2
+}
+

@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BOX Yeni Mimari - Interaktif Diyagram</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --text: #1d2433;
+      --muted: #5a6780;
+      --line: #d8deea;
+      --primary: #1f7a8c;
+      --accent: #e76f51;
+      --soft: #eef3ff;
+      --ok: #2a9d8f;
+      --warn: #e9c46a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, #eaf0ff 0%, transparent 45%),
+        radial-gradient(circle at 90% 100%, #ffeede 0%, transparent 40%),
+        var(--bg);
+    }
+
+    .wrap {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(20px, 2.4vw, 30px);
+      letter-spacing: 0.2px;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .hint {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .stage {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 16px;
+      min-height: 680px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 24px rgba(16, 24, 40, 0.06);
+    }
+
+    .canvas {
+      position: absolute;
+      inset: 0;
+      transform-origin: 0 0;
+      cursor: grab;
+      user-select: none;
+      touch-action: none;
+    }
+
+    .canvas.dragging {
+      cursor: grabbing;
+    }
+
+    .diagram {
+      display: none;
+      width: 1600px;
+      height: 980px;
+      padding: 20px;
+    }
+
+    .diagram.active {
+      display: block;
+    }
+
+    .card {
+      fill: #fff;
+      stroke: #cfd7e6;
+      stroke-width: 2;
+      rx: 14;
+      ry: 14;
+    }
+
+    .card-title {
+      font-size: 21px;
+      font-weight: 700;
+      fill: #10213d;
+    }
+
+    .card-text {
+      font-size: 14px;
+      fill: #2f3d57;
+    }
+
+    .card-small {
+      fill: #f8fbff;
+      stroke: #d8e4ff;
+      stroke-width: 1.5;
+      rx: 10;
+      ry: 10;
+    }
+
+    .pill {
+      fill: var(--soft);
+      stroke: #b9c8ef;
+      stroke-width: 1.2;
+      rx: 999;
+      ry: 999;
+    }
+
+    .pill-text {
+      font-size: 12px;
+      font-weight: 700;
+      fill: #23418f;
+    }
+
+    .line {
+      stroke: #6e7f9f;
+      stroke-width: 2.4;
+      fill: none;
+      marker-end: url(#arrow);
+    }
+
+    .line-soft {
+      stroke: #9aa7bf;
+      stroke-width: 1.8;
+      stroke-dasharray: 6 5;
+      fill: none;
+      marker-end: url(#arrow-soft);
+    }
+
+    .legend {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 12px;
+      color: var(--muted);
+      max-width: 300px;
+      line-height: 1.45;
+    }
+
+    .legend strong { color: var(--text); }
+
+    @media (max-width: 900px) {
+      .stage { min-height: 560px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h1>BOX Yeni Mimari - Interaktif ve Sade</h1>
+        <div class="sub">Diyagramı fare ile sürükle, tekerlek ile yakınlaştır/uzaklaştır.</div>
+      </div>
+      <div class="controls">
+        <button id="btn-overview" class="active">1) Genel Mimari</button>
+        <button id="btn-flow">2) Liderlik Akışı</button>
+        <button id="btn-state">3) Mod Geçişi</button>
+        <button id="btn-reset">Görünümü Sıfırla</button>
+      </div>
+    </div>
+
+    <div class="hint">
+      Kısa okuma: Önce <strong>Genel Mimari</strong> ekranına bak. Sonra <strong>Liderlik Akışı</strong> ile Janus -> Athena -> Worker zincirini izle.
+      Son olarak <strong>Mod Geçişi</strong> ekranında Strategic/Tactical/Recovery geçişlerini gör.
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="canvas" id="canvas">
+
+        <!-- 1) Overview -->
+        <svg id="diagram-overview" class="diagram active" viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg" aria-label="Genel Mimari">
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L8,3 L0,6 Z" fill="#6e7f9f"/>
+            </marker>
+            <marker id="arrow-soft" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L8,3 L0,6 Z" fill="#9aa7bf"/>
+            </marker>
+          </defs>
+
+          <rect x="40" y="70" width="280" height="190" class="card"/>
+          <text x="60" y="108" class="card-title">Giriş ve Ayarlar</text>
+          <text x="60" y="142" class="card-text">- CLI / Daemon</text>
+          <text x="60" y="166" class="card-text">- box.config.json</text>
+          <text x="60" y="190" class="card-text">- policy.json</text>
+
+          <rect x="380" y="50" width="380" height="230" class="card"/>
+          <text x="400" y="90" class="card-title">AI Liderlik Zinciri</text>
+          <rect x="405" y="110" width="155" height="145" class="card-small"/>
+          <text x="420" y="142" class="card-text" style="font-weight:700;">Janus Supervisor</text>
+          <text x="420" y="166" class="card-text">Repo analizi</text>
+          <text x="420" y="188" class="card-text">Strategic/Tactical</text>
+          <text x="420" y="210" class="card-text">janus_directive.json</text>
+
+          <rect x="585" y="110" width="155" height="145" class="card-small"/>
+          <text x="600" y="142" class="card-text" style="font-weight:700;">Athena Coordinator</text>
+          <text x="600" y="166" class="card-text">Prompt tasarımı</text>
+          <text x="600" y="188" class="card-text">Model seçimi</text>
+          <text x="600" y="210" class="card-text">athena_coordination.json</text>
+
+          <line x1="560" y1="184" x2="585" y2="184" class="line"/>
+
+          <rect x="800" y="70" width="340" height="190" class="card"/>
+          <text x="820" y="108" class="card-title">Orchestrator Çekirdeği</text>
+          <text x="820" y="142" class="card-text">- project_scanner</text>
+          <text x="820" y="166" class="card-text">- task_planner</text>
+          <text x="820" y="190" class="card-text">- task_queue</text>
+          <text x="820" y="214" class="card-text">- fallback zinciri</text>
+
+          <rect x="1180" y="70" width="360" height="190" class="card"/>
+          <text x="1200" y="108" class="card-title">Worker Çalıştırma</text>
+          <text x="1200" y="142" class="card-text">- worker_runner</text>
+          <text x="1200" y="166" class="card-text">- Backend / Frontend / QA</text>
+          <text x="1200" y="190" class="card-text">- Copilot CLI ile uygulama</text>
+
+          <rect x="420" y="340" width="720" height="180" class="card"/>
+          <text x="440" y="378" class="card-title">State ve Gözlem</text>
+          <text x="440" y="412" class="card-text">- state/*.json (tasks, budget, alerts, directives)</text>
+          <text x="440" y="436" class="card-text">- System Guardian sağlık kontrolü</text>
+          <text x="440" y="460" class="card-text">- Dashboard (:8787) canlı görünüm</text>
+
+          <rect x="80" y="560" width="1460" height="250" class="card"/>
+          <text x="100" y="598" class="card-title">Tek Cümlede Akış</text>
+          <text x="100" y="634" class="card-text">1) Sistem başlar -> 2) Janus repo + state analiz eder -> 3) Athena görev promptlarını üretir</text>
+          <text x="100" y="660" class="card-text">4) Orchestrator kuyruğa basar -> 5) Workerlar uygular -> 6) Sonuçlar state + dashboard'a akar</text>
+          <text x="100" y="686" class="card-text">7) Sorun varsa recovery veya deterministic fallback devreye girer</text>
+
+          <line x1="320" y1="165" x2="380" y2="165" class="line"/>
+          <line x1="760" y1="165" x2="800" y2="165" class="line"/>
+          <line x1="1140" y1="165" x2="1180" y2="165" class="line"/>
+          <line x1="970" y1="260" x2="970" y2="340" class="line"/>
+          <line x1="1360" y1="260" x2="1360" y2="340" class="line-soft"/>
+          <line x1="560" y1="280" x2="560" y2="340" class="line-soft"/>
+
+          <rect x="92" y="82" width="90" height="26" class="pill"/>
+          <text x="106" y="99" class="pill-text">Başlangıç</text>
+        </svg>
+
+        <!-- 2) Flow -->
+        <svg id="diagram-flow" class="diagram" viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg" aria-label="Liderlik Akışı">
+          <defs>
+            <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L8,3 L0,6 Z" fill="#6e7f9f"/>
+            </marker>
+          </defs>
+
+          <text x="70" y="70" class="card-title">Liderlik Akışı (Basit Sıralı Görünüm)</text>
+
+          <rect x="90" y="120" width="280" height="110" class="card"/>
+          <text x="115" y="160" class="card-title" style="font-size:18px;">1. Orchestrator Başlatır</text>
+          <text x="115" y="188" class="card-text">Global snapshot hazırlanır.</text>
+
+          <rect x="470" y="120" width="290" height="190" class="card"/>
+          <text x="495" y="160" class="card-title" style="font-size:18px;">2. Janus AI Analiz</text>
+          <text x="495" y="188" class="card-text">- Repo issue/PR/blocked sinyalleri</text>
+          <text x="495" y="212" class="card-text">- Queue + worker + budget</text>
+          <text x="495" y="236" class="card-text">- Strategic/Tactical kararı</text>
+          <text x="495" y="260" class="card-text">- janus_directive.json</text>
+
+          <rect x="860" y="120" width="300" height="190" class="card"/>
+          <text x="885" y="160" class="card-title" style="font-size:18px;">3. Athena AI Koordinasyon</text>
+          <text x="885" y="188" class="card-text">- İşçi bazlı görev promptu</text>
+          <text x="885" y="212" class="card-text">- Model seçimi</text>
+          <text x="885" y="236" class="card-text">- Önceliklendirme</text>
+          <text x="885" y="260" class="card-text">- athena_coordination.json</text>
+
+          <rect x="1250" y="120" width="260" height="190" class="card"/>
+          <text x="1275" y="160" class="card-title" style="font-size:18px;">4. Worker Uygular</text>
+          <text x="1275" y="188" class="card-text">Task queue'dan iş alır</text>
+          <text x="1275" y="212" class="card-text">Kod/test/deploy yapar</text>
+          <text x="1275" y="236" class="card-text">Sonuçları state'e yazar</text>
+
+          <line x1="370" y1="175" x2="470" y2="175" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow2)"/>
+          <line x1="760" y1="215" x2="860" y2="215" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow2)"/>
+          <line x1="1160" y1="215" x2="1250" y2="215" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow2)"/>
+
+          <rect x="230" y="390" width="1140" height="120" class="card"/>
+          <text x="260" y="432" class="card-title" style="font-size:18px;">Fallback Kuralı</text>
+          <text x="260" y="462" class="card-text">AI zincirinde hata varsa orchestrator eski deterministic zinciri güvenli fallback olarak çalıştırır.</text>
+
+          <rect x="230" y="570" width="1140" height="250" class="card"/>
+          <text x="260" y="612" class="card-title" style="font-size:18px;">Neyi Nerede Okuyacaksın?</text>
+          <text x="260" y="642" class="card-text">- Janus kararı: state/janus_directive.json</text>
+          <text x="260" y="668" class="card-text">- Athena planı: state/athena_coordination.json</text>
+          <text x="260" y="694" class="card-text">- Kuyruk: state/tasks.json</text>
+          <text x="260" y="720" class="card-text">- Canlı süreç: dashboard :8787 + state/progress.txt</text>
+          <text x="260" y="746" class="card-text">- Ana akış kodu: src/core/orchestrator.ts</text>
+        </svg>
+
+        <!-- 3) State -->
+        <svg id="diagram-state" class="diagram" viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg" aria-label="Mod Geçişi">
+          <defs>
+            <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L8,3 L0,6 Z" fill="#6e7f9f"/>
+            </marker>
+          </defs>
+
+          <text x="70" y="70" class="card-title">Mod Geçişi (Ne Zaman Hangi Mod?)</text>
+
+          <rect x="650" y="130" width="300" height="120" class="card"/>
+          <text x="745" y="170" class="card-title" style="font-size:22px;">Startup</text>
+          <text x="690" y="198" class="card-text">Sistem ilk açılış ve ilk ölçüm.</text>
+
+          <rect x="240" y="350" width="420" height="230" class="card"/>
+          <text x="270" y="390" class="card-title">Strategic Mod</text>
+          <text x="270" y="422" class="card-text">- Repo tarama ve yeniden plan</text>
+          <text x="270" y="446" class="card-text">- Kuyruk tohumlama</text>
+          <text x="270" y="470" class="card-text">- Büyük resmi düzeltme</text>
+          <text x="270" y="494" class="card-text">- Yeni iş dalgaları</text>
+
+          <rect x="940" y="350" width="420" height="230" class="card"/>
+          <text x="970" y="390" class="card-title">Tactical Mod</text>
+          <text x="970" y="422" class="card-text">- Mevcut kuyruk yürütme</text>
+          <text x="970" y="446" class="card-text">- Worker dağıtımı</text>
+          <text x="970" y="470" class="card-text">- Hızlı hata düzeltme</text>
+          <text x="970" y="494" class="card-text">- Kısa çevrimli ilerleme</text>
+
+          <rect x="650" y="680" width="300" height="160" class="card"/>
+          <text x="705" y="720" class="card-title">Recovery</text>
+          <text x="680" y="752" class="card-text">Guardian kritik risk görürse</text>
+          <text x="680" y="776" class="card-text">Rebase + Requeue + Güvenli dönüş</text>
+
+          <line x1="740" y1="250" x2="420" y2="350" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow3)"/>
+          <line x1="860" y1="250" x2="1140" y2="350" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow3)"/>
+
+          <line x1="660" y1="450" x2="940" y2="450" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow3)"/>
+          <line x1="940" y1="490" x2="660" y2="490" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow3)"/>
+
+          <line x1="450" y1="580" x2="700" y2="680" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow3)"/>
+          <line x1="1150" y1="580" x2="900" y2="680" stroke="#6e7f9f" stroke-width="3" marker-end="url(#arrow3)"/>
+
+          <rect x="120" y="680" width="430" height="170" class="card-small"/>
+          <text x="145" y="714" class="card-text" style="font-weight:700;">Strategic'e geçiş sinyalleri</text>
+          <text x="145" y="742" class="card-text">- Kuyruk boş veya tıkandı</text>
+          <text x="145" y="764" class="card-text">- Fail/blocked oranı yüksek</text>
+          <text x="145" y="786" class="card-text">- Yeni issue dalgası var</text>
+
+          <rect x="1050" y="680" width="430" height="170" class="card-small"/>
+          <text x="1075" y="714" class="card-text" style="font-weight:700;">Tactical'e devam sinyalleri</text>
+          <text x="1075" y="742" class="card-text">- Aktif iş kuyruğu sağlıklı</text>
+          <text x="1075" y="764" class="card-text">- Workerlar üretim yapıyor</text>
+          <text x="1075" y="786" class="card-text">- Kritik blokaj yok</text>
+        </svg>
+
+      </div>
+
+      <div class="legend">
+        <strong>Kontroller:</strong> Fare tekerleği ile zoom, sol tık basılı tutup sürükleyerek taşıma.<br />
+        <strong>Not:</strong> Bu dosya bağımsız çalışır, internet gerekmez.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const diagrams = {
+      overview: document.getElementById('diagram-overview'),
+      flow: document.getElementById('diagram-flow'),
+      state: document.getElementById('diagram-state')
+    };
+
+    const buttons = {
+      overview: document.getElementById('btn-overview'),
+      flow: document.getElementById('btn-flow'),
+      state: document.getElementById('btn-state')
+    };
+
+    const canvas = document.getElementById('canvas');
+    const stage = document.getElementById('stage');
+    const resetBtn = document.getElementById('btn-reset');
+
+    let zoom = 0.65;
+    let offsetX = 20;
+    let offsetY = 10;
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+
+    function applyTransform() {
+      canvas.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${zoom})`;
+    }
+
+    function setActive(name) {
+      Object.entries(diagrams).forEach(([k, el]) => {
+        el.classList.toggle('active', k === name);
+      });
+      Object.entries(buttons).forEach(([k, el]) => {
+        el.classList.toggle('active', k === name);
+      });
+    }
+
+    function resetView() {
+      zoom = 0.65;
+      offsetX = 20;
+      offsetY = 10;
+      applyTransform();
+    }
+
+    buttons.overview.addEventListener('click', () => setActive('overview'));
+    buttons.flow.addEventListener('click', () => setActive('flow'));
+    buttons.state.addEventListener('click', () => setActive('state'));
+    resetBtn.addEventListener('click', resetView);
+
+    stage.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const rect = stage.getBoundingClientRect();
+      const mx = e.clientX - rect.left;
+      const my = e.clientY - rect.top;
+
+      const prevZoom = zoom;
+      zoom += e.deltaY < 0 ? 0.08 : -0.08;
+      zoom = Math.max(0.35, Math.min(1.8, zoom));
+
+      const scale = zoom / prevZoom;
+      offsetX = mx - (mx - offsetX) * scale;
+      offsetY = my - (my - offsetY) * scale;
+      applyTransform();
+    }, { passive: false });
+
+    stage.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      startX = e.clientX - offsetX;
+      startY = e.clientY - offsetY;
+      canvas.classList.add('dragging');
+      stage.setPointerCapture(e.pointerId);
+    });
+
+    stage.addEventListener('pointermove', (e) => {
+      if (!isDragging) return;
+      offsetX = e.clientX - startX;
+      offsetY = e.clientY - startY;
+      applyTransform();
+    });
+
+    stage.addEventListener('pointerup', (e) => {
+      isDragging = false;
+      canvas.classList.remove('dragging');
+      stage.releasePointerCapture(e.pointerId);
+    });
+
+    stage.addEventListener('pointercancel', () => {
+      isDragging = false;
+      canvas.classList.remove('dragging');
+    });
+
+    applyTransform();
+  </script>
+</body>
+</html>
+

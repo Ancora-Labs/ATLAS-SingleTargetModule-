@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/calibration_fixture.schema.json",
+  "schemaVersion": 1,
+  "fixtureId": "ambiguous-plan-001",
+  "category": "ambiguous",
+  "expectedVerdict": "ambiguous",
+  "expectedRationaleClasses": [
+    "VAGUE_GOAL",
+    "SCOPE_DEFINED",
+    "CONCRETE_VERIFICATION"
+  ],
+  "description": "A plan with a concrete verification command and files listed, but a vague goal that does not specify measurable success criteria.",
+  "plan": {
+    "role": "Aaron",
+    "task": "Improve error handling in the API layer",
+    "priority": 2,
+    "wave": 1,
+    "verification": "npm test",
+    "files": ["src/providers/"],
+    "context": "Error handling in the API layer needs attention. Some edge cases are not covered adequately."
+  }
+}

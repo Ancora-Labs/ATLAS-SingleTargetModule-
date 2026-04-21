@@ -1,0 +1,1410 @@
+{
+  "schemaVersion": 1,
+  "globalCoefficient": 1.099999999999999,
+  "roleCoefficients": {
+    "evo": 1.099999999999999
+  },
+  "samples": [
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.320Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.332Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.344Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.355Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.366Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.378Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.390Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.402Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.414Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.425Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.439Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.451Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.463Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.474Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.487Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.499Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.511Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.522Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.534Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.545Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.557Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.569Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.580Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.592Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.604Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.616Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.627Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.639Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.652Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.664Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.678Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.689Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.701Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.713Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.723Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.735Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.747Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.758Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.770Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.782Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.794Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.805Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.817Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.828Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.839Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.851Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.864Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.877Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.890Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.905Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.918Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.928Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.939Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.958Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.969Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.981Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:31.993Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.005Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.018Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.031Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.043Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.056Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.068Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.078Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.091Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.103Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.116Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.127Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.140Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.152Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.162Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.174Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.186Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.199Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.210Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.222Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.234Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.244Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.256Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.267Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.279Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.290Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.304Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.315Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.327Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.342Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.353Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.364Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.375Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.388Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.401Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.415Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.426Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.442Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.457Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.471Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.486Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.500Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.513Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.528Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.543Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.556Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.570Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.584Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.599Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.613Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.626Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.640Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.653Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.668Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.680Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.690Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.703Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.714Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.729Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.742Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.754Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.768Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.784Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.797Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.807Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.822Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.838Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.850Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.866Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.880Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.891Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.905Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.919Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.935Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.951Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.962Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.974Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.985Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:32.996Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.011Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.024Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.035Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.048Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.060Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.075Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.091Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.104Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.117Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.132Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.146Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.160Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.173Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.185Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.197Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.209Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.221Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.234Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.247Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.259Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.272Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.283Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.294Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.307Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.322Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.334Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.346Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.355Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.368Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.381Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.393Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.408Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.417Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.429Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.442Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.454Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.466Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.477Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.489Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.501Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.515Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.529Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.541Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.555Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.568Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.580Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.592Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.604Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.615Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.630Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.644Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.655Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.667Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.680Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.691Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.702Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.713Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.725Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.736Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.747Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.758Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.769Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.781Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.793Z"
+    },
+    {
+      "batchRole": "evo",
+      "estimatedTokens": 1000,
+      "actualTokens": 1100,
+      "ratio": 1.1,
+      "recordedAt": "2026-04-03T10:29:33.804Z"
+    }
+  ],
+  "updatedAt": "2026-04-03T10:29:33.804Z"
+}

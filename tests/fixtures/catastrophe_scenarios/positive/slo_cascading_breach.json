@@ -1,0 +1,14 @@
+{
+  "_label": "positive",
+  "_scenario": "SLO_CASCADING_BREACH",
+  "_description": "consecutiveSloBreaches (4) >= threshold (3) → must detect SLO_CASCADING_BREACH",
+  "retryCount": 0,
+  "totalTasks": 3,
+  "blockedTasks": 0,
+  "janusDirectiveAgeMs": 60000,
+  "prometheusAnalysisAgeMs": 60000,
+  "parseFailureCount": 0,
+  "consecutiveBudgetBreaches": 0,
+  "consecutiveSloBreaches": 4
+}
+

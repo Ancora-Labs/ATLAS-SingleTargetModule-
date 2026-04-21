@@ -1,0 +1,14 @@
+{
+  "_label": "positive",
+  "_scenario": "BUDGET_EXHAUSTION_SPIRAL",
+  "_description": "consecutiveBudgetBreaches (3) >= threshold (2) → must detect BUDGET_EXHAUSTION_SPIRAL",
+  "retryCount": 0,
+  "totalTasks": 3,
+  "blockedTasks": 0,
+  "janusDirectiveAgeMs": 60000,
+  "prometheusAnalysisAgeMs": 60000,
+  "parseFailureCount": 0,
+  "consecutiveBudgetBreaches": 3,
+  "consecutiveSloBreaches": 0
+}
+
